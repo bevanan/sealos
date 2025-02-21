@@ -75,7 +75,7 @@ func init() {
 			},
 		},
 		{
-			Message: "Cluster Management Commands:",
+			Message: "Cluster Management Commands(new version):",
 			Commands: []*cobra.Command{
 				newCRICmd(),
 				newCertCmd(),

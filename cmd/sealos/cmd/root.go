@@ -61,7 +61,7 @@ func init() {
 
 	groups := templates.CommandGroups{
 		{
-			Message: "Cluster Management Commands:",
+			Message: "Cluster Management Commands(new version):",
 			Commands: []*cobra.Command{
 				newApplyCmd(),
 				newCertCmd(),
