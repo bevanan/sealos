@@ -39,7 +39,7 @@ func checkVersionImageList(fakeClient *operators.FakeClient) error {
 				continue
 			}
 			registries := []string{
-				"harbor.paas.nl",
+				"k8s.gcr.io",
 				"registry.k8s.io",
 			}
 			for _, registry := range registries {

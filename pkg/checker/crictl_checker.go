@@ -121,7 +121,7 @@ func (n *CRICtlChecker) Check(cluster *v2.Cluster, phase string) error {
 	}
 	status.RegistryPullStatus = regStatus
 
-	shimStatus, err := n.getRegistryStatus(crictlPath, pauseImage, "harbor.paas.nl")
+	shimStatus, err := n.getRegistryStatus(crictlPath, pauseImage, "k8s.gcr.io")
 	if err != nil {
 		status.Error = fmt.Errorf("pull shim image error: %w", err).Error()
 	}
